@@ -1,35 +1,35 @@
 {
-  "name": "michaelquarne2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "client": "cd client && npm start",
-    "server": "cd server && npm start",
-    "start": "concurrently \"npm run client\" \"npm run server\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:mikeq1225/MichaelQuarne2.git"
-  },
-  "author": "Michael Quarne",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate/issues"
-  },
-  "homepage": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate#readme",
-  "dependencies": {
-    "concurrently": "^5.2.0"
-  },
-  "boilerplate": {
-    "name": "boilerplate",
-    "version": "1.0.0",
-    "description": "",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/PC-Fullstack-Spring-2020/boilerpolate.git"
-    },
-    "author": "",
-    "license": "ISC"
-  }
+	"name": "michaelquarne2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"client": "cd client && npm start",
+		"server": "cd server && npm start",
+		"start": "concurrently \"npm run client\" \"npm run server\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:mikeq1225/MichaelQuarne2.git"
+	},
+	"author": "Michael Quarne",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate/issues"
+	},
+	"homepage": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate#readme",
+	"dependencies": {
+		"concurrently": "^5.2.0"
+	},
+	"boilerplate": {
+		"name": "boilerplate",
+		"version": "1.0.0",
+		"description": "",
+		"repository": {
+			"type": "git",
+			"url": "git+https://github.com/PC-Fullstack-Spring-2020/boilerpolate.git"
+		},
+		"author": "Michael Quarne",
+		"license": "ISC"
+	}
 }
