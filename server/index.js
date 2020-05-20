@@ -159,6 +159,14 @@ const projects = [
 	},
 ]
 
+app.get("/", (req, res) => {
+	res.send("<h1>Hello World!</h1>")
+})
+
+app.get("/api/projects", (req, res) => {
+	res.json(projects)
+})
+
 const port = 3001
 app.listen(port, () => {
 	console.log(`LISTENING ON PORT ${port}`)
