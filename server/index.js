@@ -1,13 +1,11 @@
 const express = require("express")
-const projectsRoutes = require("./routes/projects")
-
+// const projectsRoutes = require("./routes/projects")
 const app = express()
-const port = 3001
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
-app.use("/api", projectsRoutes)
+// app.use("/api", projectsRoutes)
 
 // app.get("*", function (req, res, next) {
 // 	res.sendFile(__dirname + "/public/index.html")
@@ -161,19 +159,7 @@ const projects = [
 	},
 ]
 
-// error handler
-app.use(function (req, res, next) {
-	//set locals, only providing error in development
-	res.locals.message = err.message
-	res.locals.error = req.app.get("env") === "development" ? err : {}
-	// render the error package
-	res.status(err.status || 500)
-	res.json({
-		status: err.status,
-		error: err,
-	})
-})
-
+const port = 3001
 app.listen(port, () => {
 	console.log(`LISTENING ON PORT ${port}`)
 })

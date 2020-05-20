@@ -9,4 +9,8 @@ router.get("/projects", (req, res, next) => {
 	res.json(projects)
 })
 
+// router.get("/projects/:id", (req, res, next) => {
+// 	res.json(projects)
+// })
+
 module.exports = router
