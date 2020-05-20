@@ -1,0 +1,11 @@
+@use 'src/styles/base.scss' as base;
+
+.resume {
+	padding: 100px 250px 40px 150px;
+
+	iframe {
+		width: 100%;
+		height: 700px;
+		border: 0;
+	}
+}

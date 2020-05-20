@@ -1,1 +1,1 @@
-export { default as exampleState } from "./example"
+export { default as projectState } from "./projects"

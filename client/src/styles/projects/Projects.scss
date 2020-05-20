@@ -1,0 +1,54 @@
+@use 'src/styles/base.scss' as base;
+
+.projects {
+	padding: 100px 250px 40px 150px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+
+	a {
+		text-decoration: none;
+
+		.individProject {
+			border: 1px solid base.$blueColor;
+			display: grid;
+			grid-template-columns: 150px 1fr;
+			height: 200px;
+			overflow: hidden;
+			cursor: pointer;
+			background: base.$LgreyColor;
+
+			img {
+				width: 150px;
+				height: 200px;
+			}
+
+			div {
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+
+				div {
+					h3 {
+						font-size: 1.75em;
+						text-align: center;
+						color: base.$darkBlueColor;
+						margin: 0;
+					}
+
+					p {
+						margin: 0;
+						color: base.$blueColor;
+					}
+				}
+
+				p {
+					margin: 0;
+					color: base.$blueColor;
+				}
+			}
+		}
+	}
+}

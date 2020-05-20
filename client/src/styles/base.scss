@@ -1,0 +1,48 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body,
+#root {
+	margin: 0;
+	font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+$whiteColor: #ffffff;
+$blueColor: #1a16c5;
+$silverColor: #b3b3b3;
+$darkBlueColor: #0d0ba1;
+$blackColor: #04080f;
+$LgreyColor: #d3d3d3;
+
+.container {
+	// background: $silverColor;
+	background-image: url(/assets/metal-316803_1280.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	margin: 0;
+}
+
+.homeButton {
+	position: fixed;
+	bottom: 0;
+	left: 46%;
+	font-size: 2em;
+	border: none;
+	cursor: pointer;
+	color: $blueColor;
+	background: transparent;
+}
+
+// .homeButton:hover {
+// 	background-color: $whiteColor;
+// }

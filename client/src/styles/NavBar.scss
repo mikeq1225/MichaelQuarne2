@@ -1,0 +1,41 @@
+@use 'src/styles/base.scss' as base;
+
+.navMenu {
+	position: absolute;
+	right: 0;
+	top: 290px;
+
+	a {
+		text-decoration: none;
+	}
+
+	button {
+		color: base.$blueColor;
+		outline: none;
+		width: 150px;
+		height: 50px;
+		font-size: 1.2em;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		cursor: pointer;
+		margin: 9px 0px;
+		border: 1px solid base.$blueColor;
+		background-color: base.$whiteColor;
+		transition: background-color 400ms, font-weight 400ms;
+	}
+
+	button:hover {
+		background-color: base.$LgreyColor;
+		border: 2px solid base.$blueColor;
+		transition: background-color 400ms, font-weight 400ms;
+		font-weight: 600;
+	}
+
+	button:active {
+		background-color: base.$blueColor;
+		border: 2px solid base.$silverColor;
+		font-weight: 600;
+		color: base.$silverColor;
+	}
+}

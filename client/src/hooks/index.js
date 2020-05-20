@@ -1,1 +1,1 @@
-export { useExample } from "../redux/ducks/example"
+export { useProjects } from "../redux/ducks/projects"

@@ -1,0 +1,68 @@
+@use 'src/styles/base.scss' as base;
+
+.education {
+	padding: 100px 250px 40px 150px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0px 2%;
+
+	div {
+		border: 1px solid black;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 0px 20px;
+
+		p {
+			line-height: 1.4em;
+			font-size: 1.1em;
+		}
+
+		h3 {
+			color: base.$blueColor;
+			margin: 10px 0px;
+		}
+
+		div.edLogo {
+			border: none;
+			display: flex;
+			height: 80px;
+			padding: 0;
+
+			a {
+				display: flex;
+				justify-content: center;
+				img {
+					width: 55%;
+				}
+			}
+
+			img.snhu {
+				width: 70%;
+				align-self: center;
+			}
+		}
+
+		div.edList {
+			border: none;
+			height: 30%;
+
+			h3 {
+				color: base.$blueColor;
+				text-align: center;
+			}
+
+			ul {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-gap: 0% 5%;
+				padding: 0;
+
+				li {
+					margin: 0.25em 0em;
+					color: base.$blackColor;
+				}
+			}
+		}
+	}
+}

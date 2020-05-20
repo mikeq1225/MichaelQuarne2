@@ -1,0 +1,49 @@
+@use 'src/styles/base.scss' as base;
+
+.social {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 5px;
+	position: absolute;
+	top: 300px;
+
+	a {
+		text-decoration: none;
+		outline: none;
+
+		svg {
+			font-size: 50px;
+			padding: 5px;
+			color: white;
+			transition: width 0.6s;
+		}
+
+		svg:hover {
+			width: 150px;
+			transition-timing-function: ease;
+		}
+	}
+
+	a:nth-child(1) svg {
+		background-color: rgb(50, 50, 50);
+	}
+
+	a:nth-child(2) svg {
+		background-color: rgb(14, 118, 168);
+	}
+
+	a:nth-child(3) svg {
+		background-color: rgb(59, 89, 152);
+	}
+
+	a:nth-child(4) svg {
+		background: radial-gradient(
+			circle at 25% 110%,
+			#fdf497 0,
+			#fdf497 5%,
+			#fd5949 45%,
+			#d6249f 60%,
+			#285aeb 90%
+		);
+	}
+}
