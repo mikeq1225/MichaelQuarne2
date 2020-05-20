@@ -6,7 +6,8 @@
 	"scripts": {
 		"client": "cd client && npm start",
 		"server": "cd server && npm start",
-		"start": "concurrently \"npm run client\" \"npm run server\" \"json-server -p 3001 db.json\""
+		"start": "concurrently \"npm run client\" \"npm run server\" \"json-server -p 3001 db.json\"",
+		"build": "cd client && yarn run build && cd ../server/public && rm -rf * && cp -r ../../client/build/* ."
 	},
 	"repository": {
 		"type": "git",
