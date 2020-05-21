@@ -23,7 +23,7 @@ export default (state = initialState, action) => {
 function getProjects() {
 	return (dispatch) => {
 		axios
-			.get("/projects")
+			.get("/api/projects")
 			// .get("https://api.jsonbin.io/b/5ec42bcfe91d1e45d10d472e")
 			.then((resp) => {
 				console.log(resp.data)
@@ -37,7 +37,7 @@ function getProjects() {
 
 function getProject(id) {
 	return (dispatch) => {
-		axios.get(`/projects/${id}`).then((resp) => {
+		axios.get(`/api/projects/${id}`).then((resp) => {
 			console.log(resp.data)
 			dispatch({
 				type: GET_PROJECT,
@@ -49,7 +49,7 @@ function getProject(id) {
 
 function getLinks(id) {
 	return new Promise((resolve, reject) => {
-		axios.get(`/projects`).then((resp) => {
+		axios.get(`/api/projects`).then((resp) => {
 			const projects = resp.data
 			let left = 0
 			let right = 0
