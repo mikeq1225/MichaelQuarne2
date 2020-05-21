@@ -1,11 +1,11 @@
 const express = require("express")
 // const projectsRoutes = require("./routes/projects")
 const app = express()
+const cors = require("cors")
 
+app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
-
-// app.use("/api", projectsRoutes)
 
 // app.get("*", function (req, res, next) {
 // 	res.sendFile(__dirname + "/public/index.html")
@@ -158,6 +158,24 @@ const projects = [
 		link: "https://demoday.punchcode.org/project/1",
 	},
 ]
+
+// app.get("/", (req, res) => {
+// 	res.send("<h1>Hello World!</h1>")
+// })
+
+app.get("/api/projects", (req, res) => {
+	res.json(projects)
+})
+
+app.get("/api/projects/:id", (req, res) => {
+	const id = Number(req.params.id)
+	const project = projects.find((project) => project.id === id)
+	if (project) {
+		res.json(project)
+	} else {
+		res.json("No project found")
+	}
+})
 
 const port = 3001
 app.listen(port, () => {
