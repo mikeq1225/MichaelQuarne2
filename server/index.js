@@ -7,9 +7,9 @@ app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
-// app.get("*", function (req, res, next) {
-// 	res.sendFile(__dirname + "/public/index.html")
-// })
+app.get("*", function (req, res, next) {
+	res.sendFile(__dirname + "/public/index.html")
+})
 
 const projects = [
 	{
