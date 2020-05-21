@@ -26,7 +26,6 @@ function getProjects() {
 			.get("/api/projects")
 			// .get("https://api.jsonbin.io/b/5ec42bcfe91d1e45d10d472e")
 			.then((resp) => {
-				console.log(resp.data)
 				dispatch({
 					type: GET_PROJECTS,
 					payload: resp.data,
@@ -38,7 +37,6 @@ function getProjects() {
 function getProject(id) {
 	return (dispatch) => {
 		axios.get(`/api/projects/${id}`).then((resp) => {
-			console.log(resp.data)
 			dispatch({
 				type: GET_PROJECT,
 				payload: resp.data,

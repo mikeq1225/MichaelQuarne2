@@ -6,6 +6,7 @@ const cors = require("cors")
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+app.use(express.static("build"))
 
 // app.get("*", function (req, res, next) {
 // 	res.sendFile(__dirname + "/public/index.html")
@@ -177,7 +178,7 @@ app.get("/api/projects/:id", (req, res) => {
 	}
 })
 
-const port = 3001
+const port = process.env.PORT || 3001
 app.listen(port, () => {
 	console.log(`LISTENING ON PORT ${port}`)
 })
