@@ -177,3 +177,11 @@ const port = 3001
 app.listen(port, () => {
 	console.log(`LISTENING ON PORT ${port}`)
 })
+
+// let port = process.env.PORT
+// if (port == null || port == "") {
+// 	port = 3001
+// }
+// app.listen(port, () => {
+// 	console.log(`LISTENING ON PORT ${port}`)
+// })
