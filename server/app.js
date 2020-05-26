@@ -2,11 +2,17 @@ const express = require("express")
 // const projectsRoutes = require("./routes/projects")
 const app = express()
 const cors = require("cors")
+// const path = require("path")
 
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(express.static("build"))
+
+// app.use(express.static(path.join(__dirname, "public")))
+// app.get("*", function (req, res, next) {
+// 	res.sendFile(__dirname + "/public/index.html")
+// })
 
 const projects = [
 	{
@@ -156,10 +162,6 @@ const projects = [
 	},
 ]
 
-app.get("*", function (req, res, next) {
-	res.sendFile(__dirname + "/public/index.html")
-})
-
 app.get("/api/projects", (req, res) => {
 	res.json(projects)
 })
@@ -172,6 +174,10 @@ app.get("/api/projects/:id", (req, res) => {
 	} else {
 		res.json("No project found")
 	}
+})
+
+app.get("*", function (req, res, next) {
+	res.sendFile(__dirname + "/public/index.html")
 })
 
 // const port = 3001
