@@ -156,6 +156,10 @@ const projects = [
 	},
 ]
 
+app.get("*", function (req, res, next) {
+	res.sendFile(__dirname + "/public/index.html")
+})
+
 app.get("/api/projects", (req, res) => {
 	res.json(projects)
 })
@@ -170,19 +174,15 @@ app.get("/api/projects/:id", (req, res) => {
 	}
 })
 
-app.get("*", function (req, res, next) {
-	res.sendFile(__dirname + "/public/index.html")
-})
-
-const port = 3001
-app.listen(port, () => {
-	console.log(`LISTENING ON PORT ${port}`)
-})
-
-// let port = process.env.PORT
-// if (port == null || port == "") {
-// 	port = 3001
-// }
+// const port = 3001
 // app.listen(port, () => {
 // 	console.log(`LISTENING ON PORT ${port}`)
 // })
+
+let port = process.env.PORT
+if (port == null || port == "") {
+	port = 3001
+}
+app.listen(port, () => {
+	console.log(`LISTENING ON PORT ${port}`)
+})
