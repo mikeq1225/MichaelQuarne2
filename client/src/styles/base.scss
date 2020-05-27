@@ -35,12 +35,17 @@ $LgreyColor: #d3d3d3;
 .homeButton {
 	position: fixed;
 	bottom: 0;
-	left: 46%;
+	left: 42%;
 	font-size: 2em;
 	border: none;
 	cursor: pointer;
 	color: $blueColor;
 	background: transparent;
+}
+
+.homeButton:active {
+	outline: none;
+	border: none;
 }
 
 // .homeButton:hover {

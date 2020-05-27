@@ -40,7 +40,9 @@ export default (props) => {
 					</p>
 				</div>
 				<Link to={"/"}>
-					<button className="homeButton">Home</button>
+					<button className="homeButton">
+						<img src="/assets/MichaelQuarneLogo.png" alt="Michael Quarne" />
+					</button>
 				</Link>
 			</div>
 		</div>
