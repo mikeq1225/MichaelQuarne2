@@ -138,7 +138,7 @@ const projects = [
 		lessons:
 			"I learned how to use GitHub's Projects tab to create tickets, assign them, and track the progress of the project.  I also created an MVP (minimum viable project) as well as future features for the project.  I also learned the basics of authentication and validation.",
 		tech:
-			"HTML, CSS, JavaScript, Ract, Redux, Node.js, Express, Socekt.IO, MySQL",
+			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socekt.IO, MySQL",
 		image: "/assets/chatRoom1.png",
 		image2: "/assets/chatRoom2.png",
 		link: "#0",
@@ -155,7 +155,7 @@ const projects = [
 		lessons:
 			"I learned how to plan and execute a large project, how to take all the languages and tools from class and apply them to one big project, how to use AWS as a remote MySQL database for our project, and I learned how to accomplish all of this while working remotely.",
 		tech:
-			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, MySQL, AWS, Slack, Zoom",
+			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, MySQL, AWS-RDS, Slack, Zoom",
 		image: "/assets/JurnEaseScreenShot.png",
 		image2: "/assets/Jurnease2.png",
 		link: "https://demoday.punchcode.org/project/1",
