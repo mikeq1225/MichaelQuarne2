@@ -150,7 +150,7 @@ const projects = [
 		problem:
 			"How do you take an idea from conception to a finished application.",
 		lessons:
-			"I learned how to plan and execute a large project, how to take all the languages and tools from class and apply them to one big project, how to use AWS as a remote MySQL database for our project, and I learned how to accomplish all of this while working remotely.",
+			"I learned how to plan and execute a large project, how to take all the languages and tools from class and apply them to one project, how to use AWS as a remote MySQL database for our project, and I learned how to accomplish all of this while working remotely.",
 		tech:
 			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, MySQL, AWS-RDS, Slack, Zoom",
 		image: "/assets/JurnEaseScreenShot.png",
