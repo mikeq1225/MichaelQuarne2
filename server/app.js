@@ -1,13 +1,14 @@
 const express = require("express")
+const path = require("path")
 // const projectsRoutes = require("./routes/projects")
 const app = express()
 const cors = require("cors")
-const path = require("path")
 
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
-// app.use(express.static("build"))
+
+// app.use("/api", projectsRoutes)
 
 app.use(express.static(path.join(__dirname, "public")))
 
@@ -173,19 +174,15 @@ app.get("/api/projects/:id", (req, res) => {
 	}
 })
 
-app.get("*", function (req, res) {
-	res.sendFile(path.join(__dirname + "public", "index.html"))
+app.get("/", function (req, res) {
+	res.sendFile(path.join(__dirname + "/public/index.html"))
 })
 
-// const port = 3001
-// app.listen(port, () => {
-// 	console.log(`LISTENING ON PORT ${port}`)
+// app.get("*", function (req, res) {
+// 	res.sendFile(path.join(__dirname + "public", "index.html"))
 // })
 
-let port = process.env.PORT
-if (port == null || port == "") {
-	port = 3001
-}
+const port = process.env.PORT || 3001
 app.listen(port, () => {
 	console.log(`LISTENING ON PORT ${port}`)
 })
