@@ -23,13 +23,13 @@ $blackColor: #04080f;
 $LgreyColor: #d3d3d3;
 
 .container {
-	// background: $silverColor;
 	background-image: url(/assets/metal-316803_1280.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
 	margin: 0;
+	// padding: 25% 0% 0% 0%;
 }
 
 .homeButton {
@@ -48,6 +48,23 @@ $LgreyColor: #d3d3d3;
 	border: none;
 }
 
-// .homeButton:hover {
-// 	background-color: $whiteColor;
-// }
+@media screen and (min-width: 320px) {
+}
+
+@media screen and (min-width: 480px) {
+	.container {
+		// padding: 20% 0% 0% 0%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		// padding: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
