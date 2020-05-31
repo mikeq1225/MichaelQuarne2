@@ -3,41 +3,41 @@
 .navMenu {
 	position: absolute;
 	width: 100%;
-	top: 40px;
+	top: 33px;
 	display: flex;
 	justify-content: space-around;
 
 	a {
 		text-decoration: none;
-	}
 
-	button {
-		color: base.$blueColor;
-		outline: none;
-		width: 100%;
-		height: 30px;
-		font-size: 1em;
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		cursor: pointer;
-		border: 1px solid base.$blueColor;
-		background-color: base.$whiteColor;
-		transition: background-color 400ms, font-weight 400ms;
-	}
+		button {
+			color: base.$blueColor;
+			outline: none;
+			width: 100%;
+			height: 30px;
+			font-size: 1em;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			cursor: pointer;
+			border: 1px solid base.$blueColor;
+			background-color: base.$whiteColor;
+			transition: background-color 400ms, font-weight 400ms;
+		}
 
-	button:hover {
-		background-color: base.$LgreyColor;
-		border: 2px solid base.$blueColor;
-		transition: background-color 400ms, font-weight 400ms;
-		font-weight: 600;
-	}
+		button:hover {
+			background-color: base.$LgreyColor;
+			border: 2px solid base.$blueColor;
+			transition: background-color 400ms, font-weight 400ms;
+			font-weight: 600;
+		}
 
-	button:active {
-		background-color: base.$blueColor;
-		border: 2px solid base.$silverColor;
-		font-weight: 600;
-		color: base.$silverColor;
+		button:active {
+			background-color: base.$blueColor;
+			border: 2px solid base.$silverColor;
+			font-weight: 600;
+			color: base.$silverColor;
+		}
 	}
 }
 
@@ -45,6 +45,22 @@
 }
 
 @media screen and (min-width: 480px) {
+	.navMenu {
+		position: absolute;
+		width: 58%;
+		top: 0;
+		right: 0;
+		display: flex;
+		justify-content: space-around;
+
+		a {
+			button {
+				width: 100%;
+				height: 40px;
+				font-size: 0.75em;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -52,7 +68,7 @@
 		width: 15%;
 		position: absolute;
 		right: 0;
-		top: 45%;
+		top: 33.5%;
 		flex-direction: column;
 
 		a {
@@ -71,17 +87,6 @@
 @media screen and (min-width: 992px) {
 	.navMenu {
 		width: 150px;
-
-		a {
-			button {
-				width: 100%;
-				height: 50px;
-				font-size: 1.2em;
-				display: flex;
-				align-items: center;
-				margin: 9px 0px;
-			}
-		}
 	}
 }
 

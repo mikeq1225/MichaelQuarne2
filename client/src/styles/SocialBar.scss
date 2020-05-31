@@ -47,12 +47,25 @@
 }
 
 @media screen and (min-width: 480px) {
+	.social {
+		position: absolute;
+		width: 42%;
+		top: 0;
+		left: 0;
+		display: flex;
+
+		a {
+			svg {
+				font-size: 40px;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
 	.social {
 		position: absolute;
-		top: 46.5%;
+		top: 34.5%;
 		left: 0;
 		display: grid;
 		grid-template-columns: 1fr;
