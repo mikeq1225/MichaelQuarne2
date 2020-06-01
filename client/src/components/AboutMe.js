@@ -7,12 +7,16 @@ export default (props) => {
 	return (
 		<div className="container">
 			<div className="aboutMe">
-				<div>
-					<ReactPlayer
-						className="reactPlayer"
-						url="https://www.youtube.com/watch?v=XxrOahK4cDE&t=2s"
-						controls={true}
-					/>
+				<div className="aboutWrapper">
+					<div className="playerWrapper">
+						<ReactPlayer
+							className="reactPlayer"
+							url="https://www.youtube.com/watch?v=XxrOahK4cDE&t=2s"
+							controls={true}
+							width="100%"
+							height="100%"
+						/>
+					</div>
 					<p>
 						I am a full-stack web developer from Las Vegas and a recent graduate
 						from PunchCode’s three month long Full-Stack Software Engineer
@@ -21,8 +25,8 @@ export default (props) => {
 						efficient code while focusing on UX/UI. The completion of my
 						capstone project, a vacation planning web application called
 						Jurn(ease), showcases how much I have learned in the past three
-						months. I am going to continue to learn new languages and techniques
-						to improve my overall coding skills.
+						months. I am continuing to learn new languages and techniques to
+						improve my overall coding skills.
 					</p>
 					<p>
 						My coding philosophy starts with strategic planning, designing, and
@@ -40,7 +44,7 @@ export default (props) => {
 					</p>
 				</div>
 				<Link to={"/"}>
-					<button className="homeButton">
+					<button className="aboutHomeButton">
 						<img src="/assets/MichaelQuarneLogo.png" alt="Michael Quarne" />
 					</button>
 				</Link>

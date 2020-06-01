@@ -90,7 +90,7 @@ const projects = [
 		tech: "HTML, CSS, JavaScript, React, React Router, JSON-Server",
 		image: "/assets/photoAlbum1.png",
 		image2: "/assets/photoAlbum2.png",
-		link: "#0",
+		link: "https://github.com/mikeq1225/Photo-album",
 	},
 	{
 		id: 6,
@@ -122,7 +122,7 @@ const projects = [
 		tech: "HTML, CSS, JavaScript, React, Redux, Node.js, Express, MySQL",
 		image: "/assets/ryan_listScreenshot.png",
 		image2: "/assets/ryanList2.png",
-		link: "#0",
+		link: "https://github.com/mikeq1225/ryan_list",
 	},
 	{
 		id: 8,
@@ -139,7 +139,7 @@ const projects = [
 			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socekt.IO, MySQL",
 		image: "/assets/chatRoom1.png",
 		image2: "/assets/chatRoom2.png",
-		link: "#0",
+		link: "https://github.com/mikeq1225/chatRoom",
 	},
 	{
 		id: 9,
