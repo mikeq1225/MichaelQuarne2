@@ -1,23 +1,149 @@
 @use 'src/styles/base.scss' as base;
 
 .aboutMe {
-	padding: 100px 250px 40px 150px;
-	display: grid;
-	grid-template-columns: 1fr;
-	width: 100%;
+	padding: 80px 0px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-	div {
-		.reactPlayer {
-			float: left;
-			min-height: 425px;
-			min-width: 700px;
-			margin: 0px 25px 25px 0px;
+	div.aboutWrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+
+		.playerWrapper {
+			padding: 0% 2%;
+			height: 200px;
 		}
 
 		p {
-			font-size: 1.7em;
+			margin: 2% 3%;
+			font-size: 1em;
 			color: base.$blackColor;
-			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	a {
+		.aboutHomeButton {
+			border: none;
+			cursor: pointer;
+			color: base.$blueColor;
+			background: transparent;
+
+			img {
+				width: 50%;
+			}
+		}
+
+		.aboutHomeButton:active {
+			outline: none;
+			border: none;
+		}
+	}
+}
+
+@media screen and (min-width: 320px) {
+}
+
+@media screen and (min-width: 480px) {
+	.aboutMe {
+		padding: 50px 0px 0px 0px;
+
+		div.aboutWrapper {
+			div.playerWrapper {
+				height: 250px;
+			}
+
+			p {
+				margin: 2% 3%;
+				font-size: 1.1em;
+			}
+		}
+
+		a {
+			.aboutHomeButton {
+				img {
+					width: 60%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.aboutMe {
+		padding: 75px 150px 0px 100px;
+		align-items: none;
+		height: 100vh;
+
+		div.aboutWrapper {
+			display: flex;
+			flex-direction: column;
+
+			div.playerWrapper {
+				height: 300px;
+			}
+
+			p {
+				margin: 1% 1%;
+				font-size: 1.3em;
+			}
+		}
+
+		a {
+			.aboutHomeButton {
+				img {
+					width: 60%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.aboutMe {
+		padding: 100px 20% 40px 10%;
+		height: 100%;
+		overflow: scroll;
+
+		div.aboutWrapper {
+			display: block;
+			// overflow: hidden;
+
+			div.playerWrapper {
+				padding: 0.5% 1% 0% 0%;
+				height: 500px;
+				min-width: 700px;
+				float: left;
+			}
+
+			p {
+				font-size: 1.7em;
+				margin: 0% 1% 1% 0%;
+			}
+		}
+
+		a {
+			.aboutHomeButton {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.aboutMe {
+		padding: 100px 150px 40px 150px;
+		height: 100vh;
+
+		a {
+			.aboutHomeButton {
+				img {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
