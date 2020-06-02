@@ -100,20 +100,19 @@
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 896px) {
 	.aboutMe {
-		padding: 100px 20% 40px 10%;
+		padding: 100px 21% 40px 12%;
 		height: 100%;
 		overflow: scroll;
 
 		div.aboutWrapper {
 			display: block;
-			// overflow: hidden;
 
 			div.playerWrapper {
 				padding: 0.5% 1% 0% 0%;
-				height: 500px;
-				min-width: 700px;
+				height: 400px;
+				min-width: 600px;
 				float: left;
 			}
 
