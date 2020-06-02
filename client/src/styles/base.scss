@@ -31,32 +31,67 @@ $LgreyColor: #d3d3d3;
 	margin: 0;
 }
 
+// .homeButton {
+// 	position: fixed;
+// 	bottom: 0;
+// 	left: 42%;
+// 	font-size: 2em;
+// 	border: none;
+// 	cursor: pointer;
+// 	color: $blueColor;
+// 	background: transparent;
+// }
+
+// .homeButton:active {
+// 	outline: none;
+// 	border: none;
+// }
+
 .homeButton {
-	position: fixed;
-	bottom: 0;
-	left: 42%;
-	font-size: 2em;
 	border: none;
 	cursor: pointer;
 	color: $blueColor;
-	background: transparent;
+	background: $whiteColor;
+	border-radius: 3px;
+	box-shadow: 5px 5px 0px $blueColor;
+
+	img {
+		width: 50%;
+	}
+}
+
+.homeButton:hover {
+	background-color: $LgreyColor;
+	transition: background-color 400ms, font-weight 400ms;
 }
 
 .homeButton:active {
 	outline: none;
 	border: none;
+	box-shadow: 0 0px $blueColor;
+	transform: translate3d(5px, 5px, 0px);
 }
 
 @media screen and (min-width: 320px) {
 }
 
 @media screen and (min-width: 481px) {
+	.homeButton {
+		img {
+			width: 60%;
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 890px) {
+	.homeButton {
+		img {
+			width: 100%;
+		}
+	}
 }
 
 @media screen and (min-width: 1200px) {

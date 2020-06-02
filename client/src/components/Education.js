@@ -10,6 +10,7 @@ export default (props) => {
 				<div>
 					<div className="edLogo">
 						<a
+							className="punch"
 							href="https://punchcode.org/"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -84,7 +85,7 @@ export default (props) => {
 						</ul>
 					</div>
 				</div>
-				<Link to={"/"}>
+				<Link className="edHome" to={"/"}>
 					<button className="homeButton">
 						<img src="/assets/MichaelQuarneLogo.png" alt="Michael Quarne" />
 					</button>
