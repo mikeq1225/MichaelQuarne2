@@ -120,11 +120,12 @@
 
 @media screen and (min-width: 1200px) {
 	.education {
-		padding: 100px 160px 50px 160px;
+		padding: 100px 160px 40px 160px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 0px 2%;
 		justify-content: center;
+		height: 100vh;
 
 		div {
 			border: 1px solid black;
@@ -133,6 +134,7 @@
 			justify-content: space-around;
 			padding: 0px 20px;
 			margin: 0;
+			max-height: 700px;
 
 			p {
 				line-height: 1.4em;
@@ -141,18 +143,17 @@
 
 			h3 {
 				color: base.$blueColor;
-				margin: 10px 0px;
+				margin: 0;
 			}
 
 			div.edLogo {
 				border: none;
 				display: flex;
-				height: 80px;
 				padding: 0% 0%;
 				margin: 1% 0%;
 
 				img {
-					width: 60%;
+					width: 50%;
 				}
 			}
 
@@ -180,11 +181,12 @@
 		}
 
 		a.edHome {
+			width: 14%;
 			margin: 15px 0px 0px 0px;
-			display: flex;
-			justify-content: center;
+			// display: flex;
+			// justify-content: center;
 			grid-column: 1 / span 2;
-			justify-self: center;
+			// justify-self: center;
 		}
 	}
 }
