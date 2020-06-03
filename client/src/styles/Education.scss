@@ -25,17 +25,9 @@
 
 		div.edLogo {
 			border: none;
-			padding: 0;
+			padding: 1% 0%;
 
-			a.punch {
-				display: flex;
-				justify-content: center;
-				img {
-					width: 55%;
-				}
-			}
-
-			img.snhu {
+			img {
 				width: 70%;
 				align-self: center;
 			}
@@ -74,16 +66,12 @@
 
 @media screen and (min-width: 481px) {
 	.education {
-		padding: 50px 0px 10px 0px;
+		padding: 50px 5px 10px 5px;
 
 		div {
 			div.edLogo {
-				padding: 1%;
-
-				a.punch {
-					img {
-						width: 40%;
-					}
+				img {
+					width: 40%;
 				}
 			}
 
@@ -132,7 +120,7 @@
 
 @media screen and (min-width: 1200px) {
 	.education {
-		padding: 100px 160px 40px 160px;
+		padding: 100px 160px 50px 160px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 0px 2%;
@@ -144,6 +132,7 @@
 			flex-direction: column;
 			justify-content: space-around;
 			padding: 0px 20px;
+			margin: 0;
 
 			p {
 				line-height: 1.4em;
@@ -159,19 +148,11 @@
 				border: none;
 				display: flex;
 				height: 80px;
-				padding: 0;
+				padding: 0% 0%;
+				margin: 1% 0%;
 
-				a {
-					display: flex;
-					justify-content: center;
-					img {
-						width: 55%;
-					}
-				}
-
-				img.snhu {
-					width: 70%;
-					align-self: center;
+				img {
+					width: 60%;
 				}
 			}
 
@@ -199,6 +180,7 @@
 		}
 
 		a.edHome {
+			margin: 15px 0px 0px 0px;
 			display: flex;
 			justify-content: center;
 			grid-column: 1 / span 2;

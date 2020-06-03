@@ -9,14 +9,7 @@ export default (props) => {
 			<div className="education">
 				<div>
 					<div className="edLogo">
-						<a
-							className="punch"
-							href="https://punchcode.org/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img src="/assets/PunchCode.svg" alt="PunchCode logo" />
-						</a>
+						<img src="/assets/PunchCode.svg" alt="PunchCode logo" />
 					</div>
 					<h3>Certification:</h3>
 					<p>Full-Stack Software Engineer Program</p>
@@ -56,7 +49,7 @@ export default (props) => {
 				</div>
 				<div>
 					<div className="edLogo">
-						<img className="snhu" src="/assets/SNHUlogo.png" alt="SNHU logo" />
+						<img src="/assets/SNHUlogo.png" alt="SNHU logo" />
 					</div>
 					<h3>Degree:</h3>
 					<p>Associate of Science</p>
