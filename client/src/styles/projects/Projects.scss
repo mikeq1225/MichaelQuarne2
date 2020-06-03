@@ -1,10 +1,10 @@
 @use 'src/styles/base.scss' as base;
 
 .projects {
-	padding: 100px 250px 40px 150px;
+	padding: 70px 10px 10px 10px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 30px;
+	grid-template-columns: 1fr;
+	grid-gap: 10px 0px;
 
 	a {
 		text-decoration: none;
@@ -12,27 +12,28 @@
 		.individProject {
 			border: 1px solid base.$blueColor;
 			display: grid;
-			grid-template-columns: 150px 1fr;
-			height: 200px;
-			overflow: hidden;
+			grid-template-columns: 35% 1fr;
 			cursor: pointer;
 			background: base.$LgreyColor;
+			height: 140px;
 
 			img {
-				width: 150px;
-				height: 200px;
+				width: 100%;
+				height: 100%;
 			}
 
 			div {
-				padding: 10px;
+				padding: 2% 4%;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: space-between;
 
-				div {
+				div.titles {
+					padding: 0% 0% 10% 0%;
+
 					h3 {
-						font-size: 1.75em;
+						font-size: 1.2em;
 						text-align: center;
 						color: base.$darkBlueColor;
 						margin: 0;
@@ -47,6 +48,132 @@
 				p {
 					margin: 0;
 					color: base.$blueColor;
+				}
+			}
+		}
+	}
+
+	a.projHome {
+		justify-self: center;
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 320px) {
+}
+
+@media screen and (min-width: 481px) {
+	.projects {
+		padding: 50px 10px 10px 10px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		height: 100%;
+
+		a {
+			.individProject {
+				grid-template-columns: 30% 1fr;
+				height: 150px;
+
+				div {
+					div.titles {
+						h3 {
+							font-size: 1.5em;
+						}
+					}
+				}
+			}
+		}
+
+		a.projHome {
+			justify-self: center;
+			align-self: center;
+			width: 50%;
+
+			.homeButton {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.projects {
+		padding: 50px 16% 10px 60px;
+	}
+}
+
+@media screen and (min-width: 890px) {
+	.projects {
+		padding: 20px 160px 10px 160px;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.projects {
+		padding: 100px 250px 40px 150px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px;
+		height: 100vh;
+
+		a {
+			text-decoration: none;
+
+			.individProject {
+				border: 1px solid base.$blueColor;
+				display: grid;
+				grid-template-columns: 150px 1fr;
+				height: 200px;
+				overflow: hidden;
+				cursor: pointer;
+				background: base.$LgreyColor;
+
+				img {
+					width: 150px;
+					height: 200px;
+				}
+
+				div {
+					padding: 10px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between;
+
+					div.titles {
+						h3 {
+							font-size: 1.75em;
+							text-align: center;
+							color: base.$darkBlueColor;
+							margin: 0;
+						}
+
+						p {
+							margin: 0;
+							color: base.$blueColor;
+						}
+					}
+
+					p {
+						margin: 0;
+						color: base.$blueColor;
+					}
+				}
+			}
+		}
+
+		a.projHome {
+			display: flex;
+			justify-content: center;
+			grid-column: 1 / span 3;
+			justify-self: center;
+
+			.homeButton {
+				img {
+					width: 100%;
 				}
 			}
 		}
