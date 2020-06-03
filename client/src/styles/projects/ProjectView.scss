@@ -1,44 +1,48 @@
 @use 'src/styles/base.scss' as base;
 
 .project {
-	padding: 70px 0px 10px 0px;
+	padding: 70px 5px 10px 5px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 	.project1 {
 		display: grid;
-		grid-template-columns: 20px auto 20px;
+		grid-template-columns: 7% auto 7%;
 
 		a.arrow {
 			align-self: center;
 			justify-self: center;
-			// padding: 0px 10px;
 
 			svg {
-				font-size: 1em;
+				font-size: 1.5em;
 				color: base.$darkBlueColor;
 			}
 		}
 
-		div {
-			color: black;
-			display: flex;
+		div.window {
+			display: grid;
+			margin: 1%;
 
 			a {
+				grid-row: 2 / span 1;
+				grid-column: 1 / span 1;
+				width: 60%;
+				justify-self: center;
+
 				img {
-					width: 50px;
-					height: 70px;
+					width: 100%;
 				}
 			}
 
-			div {
+			div.projInfo {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				padding: 0px 0px 20px 20px;
-				// max-height: 700px;
 
 				h1 {
+					margin: 0px 0px 10px 0px;
+					font-size: 1.5em;
 					text-align: center;
 					color: base.$darkBlueColor;
 				}
@@ -48,21 +52,22 @@
 				}
 
 				h2 {
+					font-size: 1em;
 					margin: 0;
 				}
 
 				p {
 					margin: 0;
-					font-size: 1.5em;
+					font-size: 1.25em;
 					color: base.$blueColor;
+					text-align: center;
 				}
 			}
 		}
 	}
 
 	a.viewHome {
-		justify-self: center;
-		width: 40%;
+		width: 35%;
 	}
 }
 
@@ -70,70 +75,115 @@
 }
 
 @media screen and (min-width: 481px) {
+	.project {
+		padding: 40px 5px 10px 5px;
+	}
 }
 
 @media screen and (min-width: 768px) {
+	.project {
+		padding: 20px 16% 10px 50px;
+
+		.project1 {
+			a.arrow {
+				svg {
+					font-size: 2.5em;
+				}
+			}
+
+			div.window {
+				div.projInfo {
+					h1 {
+						font-size: 2em;
+					}
+
+					h2 {
+						font-size: 1.25em;
+					}
+
+					p {
+						font-size: 1.5em;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 890px) {
+	.project {
+		.project1 {
+			a.arrow {
+				svg {
+					font-size: 3em;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 1200px) {
 	.project {
-		padding: 100px 250px 40px 150px;
+		padding: 100px 160px 10px 150px;
+		height: 100vh;
+		display: grid;
+		justify-items: center;
 
 		.project1 {
 			display: grid;
-			grid-template-columns: 70px auto 70px;
+			grid-template-columns: 60px auto 60px;
 
 			a.arrow {
-				align-self: center;
-				justify-self: center;
-				padding: 0px 10px;
-
 				svg {
 					font-size: 3.5em;
-					color: base.$darkBlueColor;
 				}
 			}
 
-			div {
-				color: black;
-				display: flex;
+			div.window {
+				display: grid;
+				grid-template-columns: 40% 1fr;
 
 				a {
+					grid-row: 1 / span 1;
+					grid-column: 1 / span 1;
+					width: 100%;
 					img {
-						width: 500px;
+						width: 100%;
 						height: 700px;
 					}
 				}
 
-				div {
+				div.projInfo {
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
 					padding: 0px 0px 20px 20px;
 					max-height: 700px;
+					overflow: scroll;
 
 					h1 {
 						text-align: center;
-						color: base.$darkBlueColor;
-					}
-
-					a {
-						color: base.$darkBlueColor;
+						font-size: 3em;
 					}
 
 					h2 {
 						margin: 0;
+						font-size: 1.5em;
 					}
 
 					p {
 						margin: 0;
-						font-size: 1.5em;
-						color: base.$blueColor;
+						font-size: 1.75em;
+						text-align: left;
 					}
 				}
+			}
+		}
+		a.viewHome {
+			width: 15%;
+
+			button {
+				width: 100%;
 			}
 		}
 	}
