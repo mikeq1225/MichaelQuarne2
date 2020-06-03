@@ -1,19 +1,21 @@
 @use 'src/styles/base.scss' as base;
 
 .project {
-	padding: 100px 250px 40px 150px;
+	padding: 70px 0px 10px 0px;
+	display: flex;
+	flex-direction: column;
 
 	.project1 {
 		display: grid;
-		grid-template-columns: 70px auto 70px;
+		grid-template-columns: 20px auto 20px;
 
 		a.arrow {
 			align-self: center;
 			justify-self: center;
-			padding: 0px 10px;
+			// padding: 0px 10px;
 
 			svg {
-				font-size: 3.5em;
+				font-size: 1em;
 				color: base.$darkBlueColor;
 			}
 		}
@@ -24,8 +26,8 @@
 
 			a {
 				img {
-					width: 500px;
-					height: 700px;
+					width: 50px;
+					height: 70px;
 				}
 			}
 
@@ -34,7 +36,7 @@
 				flex-direction: column;
 				justify-content: space-between;
 				padding: 0px 0px 20px 20px;
-				max-height: 700px;
+				// max-height: 700px;
 
 				h1 {
 					text-align: center;
@@ -53,6 +55,84 @@
 					margin: 0;
 					font-size: 1.5em;
 					color: base.$blueColor;
+				}
+			}
+		}
+	}
+
+	a.viewHome {
+		justify-self: center;
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 320px) {
+}
+
+@media screen and (min-width: 481px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 890px) {
+}
+
+@media screen and (min-width: 1200px) {
+	.project {
+		padding: 100px 250px 40px 150px;
+
+		.project1 {
+			display: grid;
+			grid-template-columns: 70px auto 70px;
+
+			a.arrow {
+				align-self: center;
+				justify-self: center;
+				padding: 0px 10px;
+
+				svg {
+					font-size: 3.5em;
+					color: base.$darkBlueColor;
+				}
+			}
+
+			div {
+				color: black;
+				display: flex;
+
+				a {
+					img {
+						width: 500px;
+						height: 700px;
+					}
+				}
+
+				div {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					padding: 0px 0px 20px 20px;
+					max-height: 700px;
+
+					h1 {
+						text-align: center;
+						color: base.$darkBlueColor;
+					}
+
+					a {
+						color: base.$darkBlueColor;
+					}
+
+					h2 {
+						margin: 0;
+					}
+
+					p {
+						margin: 0;
+						font-size: 1.5em;
+						color: base.$blueColor;
+					}
 				}
 			}
 		}

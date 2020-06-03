@@ -61,7 +61,7 @@ export default (props) => {
 						<FaAngleDoubleRight />
 					</Link>
 				</div>
-				<Link to={"/"}>
+				<Link className="viewHome" to={"/"}>
 					<button className="homeButton">
 						<img src="/assets/MichaelQuarneLogo.png" alt="Michael Quarne" />
 					</button>
