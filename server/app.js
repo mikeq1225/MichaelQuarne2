@@ -145,7 +145,7 @@ const projects = [
 		id: 9,
 		title: "Jurn(ease)",
 		subtitle: "Capstone project",
-		brief: "Culmination of everything I learned",
+		brief: "Complete web application",
 		description:
 			"A travel planning application that allows multiple users to plan group vacations in the same place.  They can create Jurn(e)s, or trips, and invite others to join.  Then everyone on the Jurn(e) can decide where to go, what do to, and where to stay.",
 		problem:

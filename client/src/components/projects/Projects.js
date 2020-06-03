@@ -18,7 +18,7 @@ export default (props) => {
 						<div className="individProject">
 							<img src={project.image} alt={project.title + " replica"} />
 							<div>
-								<div>
+								<div className="titles">
 									<p>{project.subtitle}</p>
 									<h3>{project.title}</h3>
 								</div>
@@ -28,7 +28,7 @@ export default (props) => {
 					</Link>
 				))}
 
-				<Link to={"/"}>
+				<Link className="projHome" to={"/"}>
 					<button className="homeButton">
 						<img src="/assets/MichaelQuarneLogo.png" alt="Michael Quarne" />
 					</button>
