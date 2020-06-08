@@ -40,7 +40,7 @@ export default (props) => {
 						us that they would not be moving back to Wisconsin. We decided it
 						was a good time to move somewhere warm to begin an exciting a new
 						chapter in our lives. Las Vegas has not let us down. It has so much
-						to offer and we have meet some amazing new friends.
+						to offer and we have meet many amazing new friends.
 					</p>
 				</div>
 				<Link to={"/"}>
