@@ -93,7 +93,7 @@ const projects = [
 		tech: "HTML, CSS, JavaScript, React, React Router, JSON-Server",
 		image: "/assets/photoAlbum1.png",
 		image2: "/assets/photoAlbum2.png",
-		link: "https://github.com/mikeq1225/Photo-album",
+		link: "https://cryptic-dusk-52003.herokuapp.com/",
 	},
 	{
 		id: 6,
