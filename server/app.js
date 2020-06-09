@@ -1,14 +1,11 @@
 const express = require("express")
 const path = require("path")
-// const projectsRoutes = require("./routes/projects")
 const app = express()
 const cors = require("cors")
 
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
-
-// app.use("/api", projectsRoutes)
 
 app.use(express.static(path.join(__dirname, "public")))
 
@@ -174,15 +171,11 @@ app.get("/api/projects/:id", (req, res) => {
 	}
 })
 
-app.get("/", function (req, res) {
+app.get("*", function (req, res) {
 	res.sendFile(path.join(__dirname + "/public/index.html"))
 })
 
-// app.get("*", function (req, res) {
-// 	res.sendFile(path.join(__dirname + "public", "index.html"))
-// })
-
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 4001
 app.listen(port, () => {
 	console.log(`LISTENING ON PORT ${port}`)
 })
