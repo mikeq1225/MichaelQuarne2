@@ -58,7 +58,7 @@ const projects = [
 		tech: "HTML, CSS, JavaScript, React, Redux, Node.js, Express, MySQL",
 		image: "/assets/ryan_listScreenshot.png",
 		image2: "/assets/ryanList2.png",
-		link: "https://github.com/mikeq1225/ryan_list",
+		link: "https://mighty-garden-83965.herokuapp.com/",
 	},
 	{
 		id: 4,
