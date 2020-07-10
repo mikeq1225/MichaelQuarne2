@@ -25,7 +25,8 @@ const projects = [
 			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, MySQL, AWS-RDS, Slack, Zoom",
 		image: "/assets/JurnEaseScreenShot.png",
 		image2: "/assets/Jurnease2.png",
-		link: "https://demoday.punchcode.org/project/1",
+		link: "https://aqueous-refuge-23431.herokuapp.com/",
+		link2: "https://demoday.punchcode.org/project/1",
 	},
 	{
 		id: 2,
@@ -39,7 +40,7 @@ const projects = [
 		lessons:
 			"I learned how to use GitHub's Projects tab to create tickets, assign them, and track the progress of the project.  I also created an MVP (minimum viable project) as well as future features for the project.  I also learned the basics of authentication and validation.",
 		tech:
-			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socekt.IO, MySQL",
+			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socket.IO, MySQL",
 		image: "/assets/chatRoom1.png",
 		image2: "/assets/chatRoom2.png",
 		link: "https://github.com/mikeq1225/chatRoom",
@@ -52,7 +53,7 @@ const projects = [
 		description:
 			"We were tasked with making a replica CraigsList website where users could search and add postings using React components and a MySQL database.",
 		problem:
-			"Using React and Redux to keep track of several different pieces of state on differenet components while integrating a MySQL database.",
+			"Using React and Redux to keep track of several different pieces of state on different components while integrating a MySQL database.",
 		lessons:
 			"I learned how to construct useful and concise MySQL queries to retrieve date from and add data to the database.",
 		tech: "HTML, CSS, JavaScript, React, Redux, Node.js, Express, MySQL",
@@ -82,7 +83,7 @@ const projects = [
 		subtitle: "5th project",
 		brief: "First project with React",
 		description:
-			"A photo album based an a topic of our choosing. We were given the wireframe layout of each page and we had to replicate it.  We also had to create our own data set in a JSON file and be able to dynamically display that data.",
+			"A photo album based an a topic of our choosing. We were given the wire frame layout of each page and we had to replicate it.  We also had to create our own data set in a JSON file and be able to dynamically display that data.",
 		problem:
 			"How to create different routes within a single page application to make it appear as though the user was navigating to a new page.",
 		lessons:
@@ -114,11 +115,11 @@ const projects = [
 		subtitle: "3rd project",
 		brief: "Group Project of a fictional restaurant",
 		description:
-			"A group assingment where we utilized Github for version control and collaboration to make a website for a fictional restaurant. We were given a JSON file with menu items.",
+			"A group assignment where we utilized Github for version control and collaboration to make a website for a fictional restaurant. We were given a JSON file with menu items.",
 		problem:
 			"How do we work on the same project without causing problems and still creating a cohesive looking website.",
 		lessons:
-			"I learned how to use Github's branches to ensure my team could work on the same website but in different sections to avoid conflicts.",
+			"I learned how to use Github branches to ensure my team could work on the same website but in different sections to avoid conflicts.",
 		tech: "HTML, CSS, JavaScript, jQuery, GitHub",
 		image: "/assets/GroupProject.png",
 		image2: "/assets/GroupProject.png",
@@ -149,7 +150,7 @@ const projects = [
 		problem:
 			"Trying to figure out how to position things in the correct space and order.",
 		lessons:
-			"I learned how to use CSS Grid and Flexbox quite well. Also learned how to use pseudo elements.",
+			"I learned how to use CSS Grid and Flex quite well. Also learned how to use pseudo elements.",
 		tech: "HTML, CSS",
 		image: "/assets/Ska8er_Site.png",
 		image2: "/assets/Ska8er_Site.png",
