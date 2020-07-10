@@ -19,14 +19,14 @@ export default (props) => {
 					</div>
 					<p>
 						I am a full-stack web developer from Las Vegas and a recent graduate
-						from PunchCode’s three month long Full-Stack Software Engineer
-						bootcamp. Skilled at building web applications from the ground up –
-						from concept, to design, to writing well-designed, testable and
-						efficient code while focusing on UX/UI. The completion of my
-						capstone project, a vacation planning web application called
-						Jurn(ease), showcases how much I have learned in the past three
-						months. I am continuing to learn new languages and techniques to
-						improve my overall coding skills.
+						from PunchCode’s three month long Full-Stack Software Engineer boot
+						camp. Skilled at building web applications from the ground up – from
+						concept, to design, to writing well-designed, testable and efficient
+						code while focusing on UX/UI. The completion of my capstone project,
+						a vacation planning web application called Jurn(ease), showcases how
+						much I have learned in the past three months. I am continuing to
+						learn new languages and techniques to improve my overall coding
+						skills.
 					</p>
 					<p>
 						My coding philosophy starts with strategic planning, designing, and

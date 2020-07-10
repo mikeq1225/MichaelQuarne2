@@ -7,7 +7,7 @@ export default (props) => {
 			<div className="home">
 				<h1>Michael Quarne</h1>
 				<h2>Full-Stack Developer</h2>
-				<img src="/assets/michaelQ.jpg" alt="Headshot of Mike Quarne"></img>
+				<img src="/assets/michaelQ.jpg" alt="Michael Quarne"></img>
 			</div>
 		</div>
 	)

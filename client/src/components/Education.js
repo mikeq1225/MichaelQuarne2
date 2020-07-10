@@ -15,14 +15,15 @@ export default (props) => {
 					<p>Full-Stack Software Engineer Program</p>
 					<h3>What is PunchCode?</h3>
 					<p>
-						PunchCode is a 3 month fulltime coding bootcamp where I learned more
-						than just how to write code. I completed 420 hours of education,
-						experiences, performances, and examinations to earn my Certificate.
+						PunchCode is a 3 month fulltime coding boot camp where I learned
+						more than just how to write code. I completed 420 hours of
+						education, experiences, performances, and examinations to earn my
+						Certificate.
 					</p>
 					<h3>Why I Did It:</h3>
 					<p>
 						I realized I had a passion for coding and solving problems while I
-						was pursuing my Assocaite's Degree, but I didn't have the right
+						was pursuing my Associate's Degree, but I didn't have the right
 						knowledge to land a job. I decided to enroll at PunchCode because it
 						was a fast way to gain knowledge and experience. Although it was one
 						of the toughest things I ever attempted, completing the program was
@@ -71,7 +72,7 @@ export default (props) => {
 							<li>Computer Platform Technologies</li>
 							<li>Network and Telecom Management</li>
 							<li>Project Management in Info Tech</li>
-							<li>Cybersecurity and Information Assurance</li>
+							<li>CyberSecurity and Information Assurance</li>
 							<li>Introduction to Scripting</li>
 							<li>Applied Statistics for STEM</li>
 							<li>Bus Systems Analysis/Design</li>
