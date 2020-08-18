@@ -28,9 +28,6 @@
 	}
 }
 
-@media screen and (min-width: 320px) {
-}
-
 @media screen and (min-width: 481px) {
 	.home {
 		padding: 50px 0px 10px 0px;
@@ -93,6 +90,7 @@
 
 @media screen and (min-width: 1200px) {
 	.home {
+		background: url("/assets/SilverBkgrd1.jpg") no-repeat center center/ cover;
 		display: flex;
 		flex-direction: column;
 		align-items: center;

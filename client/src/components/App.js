@@ -1,15 +1,14 @@
 import React, { Suspense } from "react"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import Home from "./Home"
-import AboutMe from "./AboutMe"
-import Projects from "./projects/Projects"
-// import ProjectView from "./projects/ProjectView"
-import Education from "./Education"
 import SocialBar from "./SocialBar"
 import NavBar from "./NavBar"
-import Resume from "./Resume"
 
 const ProjectView = React.lazy(() => import("./projects/ProjectView"))
+const AboutMe = React.lazy(() => import("./AboutMe"))
+const Education = React.lazy(() => import("./Education"))
+const Resume = React.lazy(() => import("./Resume"))
+const Projects = React.lazy(() => import("./projects/Projects"))
 
 export default (props) => {
 	return (
