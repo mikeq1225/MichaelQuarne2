@@ -21,7 +21,7 @@
 	"homepage": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate#readme",
 	"dependencies": {
 		"concurrently": "^5.2.0",
-		"json-server": "^0.16.1"
+		"json-server": "^0.17.1"
 	},
 	"boilerplate": {
 		"name": "boilerplate",
